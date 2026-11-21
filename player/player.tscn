@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://6u23rlrn86d8" path="res://player/simple_gun/gun_model.glb" id="1_oul6g"]
 [ext_resource type="Script" uid="uid://b7f4ll54tymtw" path="res://player/player.gd" id="1_rkbax"]
+[ext_resource type="Texture2D" uid="uid://cq47mx3tdrwuf" path="res://player/reticle.png" id="3_g1dw6"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7n5fy"]
 
@@ -18,3 +19,19 @@ transform = Transform3D(1, 9.8005096e-08, -1.6023628e-06, 0, 0.9981348, 0.061048
 
 [node name="gun_model" parent="Camera3D" unique_id=1251816271 instance=ExtResource("1_oul6g")]
 transform = Transform3D(-0.34067905, -0.011383478, -0.041357283, -0.0137864, 0.36306596, 0.028342688, 0.037881527, 0.029757626, -0.36162317, 0.4640749, -0.1980946, -0.45390126)
+
+[node name="Reticle" type="TextureRect" parent="." unique_id=1827027508]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.458069
+offset_top = -12.650269
+offset_right = 6.8079224
+offset_bottom = 8.642975
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.95806473, 0.96980333)
+texture = ExtResource("3_g1dw6")
+expand_mode = 1
